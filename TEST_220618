@@ -1,0 +1,19 @@
+i = 0
+while i < 3 :
+    year = int(input("출생년도 입력:"))
+    if 1920 <= year <= 2021 :
+               i = i + 1
+               year = str(year)
+               if year.endswith('1') or year.endswith('6') :
+                       print("-->월요일")
+               elif year.endswith('2') or year.endswith('7') :
+                       print("-->화요일")
+               elif year.endswith('3') or year.endswith('8') :
+                       print("-->수요일")
+               elif year.endswith('4') or year.endswith('9') :
+                       print("-->목요일")
+               else :
+                       print("-->금요일")
+    else :
+            i = i
+            print("입력오류!")
